@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: monospace">
+Legend:<br>
+    <text style="color:green">Green</text> — conversion successful<br>
+    <text style="color:#b28c00">Yellow</text> — conversion imprecise<br>
+    <text style="color:#ce0505">Red</text> — conversion failed<br>
+    <text style="background-color:#ce0505;color:white">Red</text> — no converter found<br>
+    <text style="font-weight:bold">Bold</text> — conversion applied directly<br>
+    * — subgraph reused<br>
+    <text style="background-color:black;color:white">Tensor</text> — this output is not dependent on any of subgraph's input tensors<br>
+    <text style="text-decoration:underline">Tensor</text> — this input is a parameter / constant<br>
+    <text style="color:#656565">Tensor</text> — this tensor is useless<br>
+<br>
+<text style="color:green">MyModule[__main__]</text>(<text style="color:#656565">int64_0<3></text>) -> None<br>
+<text style="color:green">&nbsp;│&nbsp;</text> <text style="color:green;font-weight:bold">abs[torch]</text>(<text style="">int64_0<3></text>) -> <text style="color:#656565">int64_1<3></text><br>
+
+</body>
+</html>
